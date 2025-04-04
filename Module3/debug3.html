@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Multi-Method CSS Example</title>
+  <style>
+    h1 {
+      color: navy;
+      font-size: 28px;
+	  /* here hex value #f0f0 is not valid it should contain all 6 places */
+      background-color: #f0f0f0;
+    }
+    .highlighted-text {
+      background-color: yellow;
+      color: red;
+    }
+  </style>
+  <link rel="stylesheet" href="debug3.css">
+</head>
+<body>
+
+  <h1>Main Title</h1>
+  <!-- here also color: #3333 is not valid -->
+  <p style="font-size: 16px; color: #333333;">This paragraph has inline styles applied.</p>
+  <p class="highlighted-text">This paragraph uses a class-based style.</p>
+  <div id="main-container">
+    <p>This div should have styles from the external stylesheet.</p>
+  </div>
+
+</body>
+</html>
