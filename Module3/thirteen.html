@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		div{
+			width:200px;
+			height:200px;
+			background-color: black;
+			
+		}
+		.highlight{
+			background-color: blueviolet;
+		}
+		#special{
+			background-color: green;
+		}
+		/* Here the displayed colour is green */
+		/* because the specificity for tag selector  is 1, class selector is 10 and id selector is 100 */
+		/* That's y id has highest precedencee than tag and class */
+/* so the properties ofid selector will be applied to the div */
+
+	</style>
+</head>
+<body>
+	<div class="highlight" id="special"></div>
+</body>
+</html>
