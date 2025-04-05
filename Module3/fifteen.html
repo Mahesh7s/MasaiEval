@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		nav {
+  display: flex;
+  gap: 40px;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+section {
+  display: flex;
+  gap: 10px;
+}
+.section1 a {
+  color: darkred;
+}
+.section2 a {
+  color: darkgreen;
+}
+.section3 a {
+  color: navy;
+}
+nav a:hover {
+  text-decoration:dashed;
+}
+nav a:active {
+  color: orange;
+}
+.section1 > a {
+  font-weight: bold;
+}
+.section2 > a {
+  text-transform: uppercase;
+}
+.section3 > a {
+  font-style: italic;
+}
+nav a[href^="https"] {
+  color: purple !important;
+}
+
+		
+	</style>
+</head>
+<body>
+ <nav>
+    <section class="section1">
+      <a href="https://example.com">Outer Link 1</a>
+      <a href="/home">Home</a>
+      <div>
+        <a href="/nested1">Inner Link 1</a>
+      </div>
+    </section>
+
+    <section class="section2">
+      <a href="/about">About Us</a>
+      <a href="https://google.com">Google</a>
+      <div>
+        <a href="/nested2">Anther Link 2</a>
+      </div>
+    </section>
+
+    <section class="section3">
+      <a href="/contact">Contact</a>
+      <a href="https://openai.com">ChatGpt</a>
+      <div>
+        <a href="/nested3">Inner Link 3</a>
+      </div>
+    </section>
+  </nav>
+
+</body>
+</html>
