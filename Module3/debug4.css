@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+	box-sizing: border-box;
+	/* To maintain the dimensions in a right way */
+}
+
+.container {
+	display: flex;
+    justify-content: center;
+    gap: 20px; /* Adds spacing between boxes */
+    padding: 20px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background: lightblue;
+    border: 1px solid black;
+    /* margin: 0%; */
+    position: relative;/*to make sure that content is not overlapped*/
+
+}
+
+.text {
+    position: absolute;/* to fix this position*/
+    left: 50%;
+    top: 10px;
+	padding: 5px 10px;
+    border: 1px solid rgb(216, 29, 29);
+}
